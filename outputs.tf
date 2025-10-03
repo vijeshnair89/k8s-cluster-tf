@@ -13,3 +13,8 @@ output "cluster_id" {
 output "node_group" {
     value = module.eks.eks_managed_node_groups
 }
+
+output "kubeconfig_update_command" {
+  description = "Command to update kubeconfig for EKS cluster"
+  value = "aws eks --region ${var.aws_region} update-kubeconfig --name ${var.cluster_name}"
+}
