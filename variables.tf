@@ -25,3 +25,7 @@ variable "desired_size" {
 variable "instance_type" {
   default = "t2.medium"
 }
+
+variable "key_name" {
+  default = "newkey"
+}

@@ -16,6 +16,7 @@ module "eks" {
       max_size     = 2
       min_size     = 1
       instance_types = [var.instance_type]
+      key_name = var.key_name
     }
   }
 
