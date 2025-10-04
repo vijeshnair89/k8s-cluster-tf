@@ -8,7 +8,7 @@ resource "kubernetes_config_map" "aws_auth" {
 
   data = {
     mapUsers = <<YAML
-- userarn: arn:aws:iam::123456789012:root
+- userarn: arn:aws:iam::135808958462:root
   username: root
   groups:
     - system:masters
